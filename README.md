@@ -1,7 +1,7 @@
 # Ethiopian Tourism Application
 
 This is a simple two-page web application built with React to showcase Ethiopia's rich culture and attractions. The project demonstrates basic UI/UX design, layout implementation, and navigation functionality using React Router.
-##Demo
+## Demo
  ```bash
 https://ethiopian-tourism.onrender.com/
 ```
