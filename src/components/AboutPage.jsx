@@ -1,12 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Images from "../assets/images";
 
 function AboutPage() {
   return (
     <div className=" pt-16">
-      <div className="  bg-[url('./fassile.png')] bg-cover bg-bottom h-[300px] md:h-[400px] ">
+      <div
+        className="bg-cover  bg-bottom h-[300px] md:h-[400px]"
+        style={{ backgroundImage: `url(${Images.fassil})` }}
+      >
         {/* Overlay */}
-        <div className="absolute h-[300px] md:h-[400px] w-full  bg-black opacity-70"></div>
+        <div className="absolute h-[300px] md:h-[400px] w-full  bg-black opacity-30"></div>
         <div className="relative container mx-auto">
           <div className="flex flex-col justify-center items-start h-[300px] md:h-[400px] text-white ">
             <p className="text-[40px] sm:text-[50px] md:text-[60px] lg:text-[70px] font-extrabold ">

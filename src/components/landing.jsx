@@ -4,7 +4,10 @@ import Images from "../assets/images";
 
 function landing() {
   return (
-    <div className=" text-white  bg-[url('./lalibela.jpg')] bg-cover bg-center h-[400px] md:h-[600px]">
+    <div
+      className="text-white h-[400px] md:h-[600px] bg-cover bg-center"
+      style={{ backgroundImage: `url(${Images.lalibela})` }}
+    >
       {/* Overlay */}
       <div className="absolute h-[400px] md:h-[600px] inset-0 bg-black opacity-30"></div>
       <div className="relative container mx-auto">
