@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Images from "../assets/images";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function landing() {
+  useEffect(() => {
+    // Aos.refresh();
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <div
       className="text-white h-[400px] md:h-[600px] bg-cover bg-center"
@@ -13,16 +19,25 @@ function landing() {
       <div className="relative container mx-auto">
         <div className="pt-20 flex flex-col justify-between ">
           <div className="self-center flex flex-col items-center justify-center">
-            <p className="text-[40px] sm:text-[50px] md:text-[60px] lg:text-[70px] font-extrabold ">
+            <p
+              data-aos="fade-down"
+              className="text-[40px] sm:text-[50px] md:text-[60px] lg:text-[70px] font-extrabold "
+            >
               Discover <span className="text-green-500 m-0 p-0">Eth</span>
               <span className="text-yellow-500 m-0 p-0">io</span>
               <span className="sm text-red-500 m-0 p-0">pia </span>
             </p>
-            <p className="text-[10px] sm:text-sm sm:block md:text-lg lg:text-xl">
+            <p
+              data-aos="fade-down"
+              className="text-[10px] sm:text-sm sm:block md:text-lg lg:text-xl"
+            >
               The Land of Origins, Culture, and Timeless Beauty
             </p>
           </div>
-          <div className="hidden h-[300px]  mt-20 md:flex justify-between items-center">
+          <div
+            data-aos="fade-zoom"
+            className="hidden h-[300px]  mt-20 md:flex justify-between items-center"
+          >
             <img
               src={Images.map2}
               alt=""
